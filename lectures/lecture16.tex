@@ -1,0 +1,109 @@
+
+\marginpar{\href{https://youtu.be/IkbkEtOOC1Y}{Video}}
+
+\marginpar{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/unit-iii/lecture-16/}{Lecture Home}}
+\marginpar{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/290daad9889bbffb3b9c1c29f5028f98_MIT6_041SCF13_L16.pdf}{Slides}}
+
+Reading: 7.1, 7.2\\
+
+new state = f(old state, noise)
+
+\subsection{Checkout Counter Model}
+
+\marginpar{(2:45)}
+
+\subsection{Finite State Markov Chains}
+
+\marginpar{(11:30)}
+
+% \subsection{Finite State Markov Chains}
+
+% \marginpar{(11:30)}
+
+\subsection{n-step Transition Probabilities}
+
+\marginpar{(20:10)}
+
+\begin{align*}
+    r_{ij} = P(X_n=j|X_0 = i)
+\end{align*}
+
+Key recursion
+\begin{align*}
+    r_{ij}(n) = \sum_{k=1}^m r_{ik}(n-1)r_{kj}, % \foreach_{i,j}
+\end{align*}
+
+\subsection{Example}
+
+\marginpar{(28:25)}
+
+\begin{figure}[ht]
+\centering
+	\begin{tikzpicture}[->, >=stealth', auto, semithick, node distance=2cm]
+	\tikzstyle{every state}=[fill=white,draw=black,thick,text=black,scale=1]
+	\node[state]    (A)                     {$i$};
+	\node[state]    (B)[above right of=A]   {$1$};
+    \node[state]    (D)[below right of=A]   {$m$};
+     \node[state]   (C)[below right of=B]   {$j$};
+	\path
+	(A) 
+      edge[bend left,above] node{$p_{i1}$} (B)
+      edge[bend right,below] node{$p_{im}$} (D)
+    (B) 
+	edge[bend left,below]	node{$z_{1j}(n-1)$}	(C)
+    (C) edge[bend left,below]	node{}	(D)
+ ;
+	\end{tikzpicture}
+\end{figure}
+
+\begin{align*}
+ &r_{11}(n) = r_{1,2}(n-1) \cdot + r_{1,1}(n-1)\cdot 0.5 \\
+ &r_{12}(n) = 1 - r_{11}(n)
+\end{align*}
+
+\marginpar{(30:30)}
+
+\begin{figure}[ht]
+\centering
+	\begin{tikzpicture}[->, >=stealth', auto, semithick, node distance=3cm]
+	\tikzstyle{every state}=[fill=white,draw=black,thick,text=black,scale=1]
+	\node[state]    (A)                     {$1$};
+	\node[state]    (B)[right of=A]   {$2$};
+	\path
+	(A) edge[loop left]			node{$0.5$}	(A)
+      edge[bend left,above] node{$0.5$} (B)
+    (B) edge[loop right]			node{$0.8$}	(B)
+	edge[bend left,below]	node{$0.2$}	(A);
+	\end{tikzpicture}
+\end{figure}
+
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c|c|c|c|}
+         & n=0 & n=1 & n=2 & n=100 & n=101 \\
+         \hline 
+         $r_{11}(n)$& 1 & 0.5 & 0.35 & $\approx \frac{2}{7}$ & $\approx \frac{2}{7}$\\
+         $r_{12}(n)$& 0 & 0.5 & 0.65 & $\approx \frac{5}{7}$ & $\approx \frac{5}{7}$\\
+         $r_{21}(n)$& 0 & 0.2 &   & $\approx \frac{2}{7}$ &\\
+         $r_{22}(n)$& 1 & 0.8 &   & $\approx \frac{5}{7}$ &\\   
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+The state of the chain doesn't care about the initial state.
+
+\subsection{Generic Convergence Questions}
+
+\marginpar{(41m)}
+
+\begin{itemize}
+    \item Does $r_{ij}(n)$ converge to something?
+    \item Can fail if chain has a periodic structure. \textbf{Periodicity}
+    \item Does the limit depend on the initial state?
+\end{itemize}
+
+\subsection{Recurrent and Transient States}
+
+\marginpar{(47:30)}
