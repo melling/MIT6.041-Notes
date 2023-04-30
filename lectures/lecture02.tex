@@ -27,9 +27,10 @@ $P(A|B)=$ Probability of A, given that B occurred.  B is our new universe.
 
 \subsubsection{Definition}
 
-$$
-P(A|B) = \frac{P(A \cap B)}{P(B)}, \qquad \text{Assuming} P(B) \ne 0
-$$
+\begin{align}
+P(A|B) = \frac{P(A \cap B)}{P(B)}, \qquad \text{Assuming} P(B) \ne 0  
+\end{align}
+\myequations{Conditional Probability}
 
 $$
 \frac{2/6}{3/6} = \frac{2}{3}
@@ -107,14 +108,16 @@ Partition sample space.
 \caption{Total Probability}
 \end{figure}
 
-\begin{align*}
+\begin{align}
 P(B)=P(A_1)P(B|A_1) + P(A_2)P(B|A_2) + P(A_3)P(B|A_3) = 1
-\end{align*}
+\end{align}
+\myequations{Total Probability Theorem}
 
 \subsection{Bayes Rule}
 
-\begin{align*}
+\begin{align}
 P(A_i|B) = \frac{P(A_i \cap B)}{P(B)} = \frac{P(A_i)P(B|A_i)}{P(B)} = \frac{P(A_i)P(B|A_i)}{\sum_j P(A_j)P(B|A_j)}
-\end{align*}
+\end{align}
+\myequations{Bayes' Rule}
 
 $P(A_j)$ - prior probabilities

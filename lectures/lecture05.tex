@@ -95,13 +95,14 @@ p_X(2)=P(HHTT) + P(HTHT) + \cdots + P(TTHH)\\
 
 In general:
 
-\begin{align*}
-p_X(k)={n \choose k} p^k(1-p)n-k, \qquad k=0,\ldots,n\\
-\end{align*}
+\begin{align}
+p_X(k)={n \choose k} p^k(1-p)n-k, \qquad k=0,\ldots,n
+\end{align}
+\myequations{Binomial PMF}
 
-\begin{align*}
-p_X(k)=\binom{n}{k} p^k(1-p)n-k, \qquad k=0,\ldots,n\\
-\end{align*}
+% \begin{align*}
+% p_X(k)=\binom{n}{k} p^k(1-p)n-k, \qquad k=0,\ldots,n\\
+% \end{align*}
 
 
 \marginpar{(23:25)}
@@ -147,11 +148,12 @@ Note, this is also the center of gravity.
 \subsubsection{Properties}
 $\alpha, \beta$ are constants
 
-\begin{align*}
+\begin{align}
 &E(\alpha] = \alpha\\
 &E(\alpha X] = \alpha E[X]\\
 &E[\alpha X + \beta] = \alpha E[X] + \beta
-\end{align*}
+\end{align}
+\myequations{Properties of Expectation}
 
 \textbf{Proof: $E[\alpha X]= \alpha E[X]$}
 
@@ -161,7 +163,9 @@ MISSING
 
 \marginpar{(43m)}
 
-\begin{align*}
+\begin{align}
 var(\alpha X + \beta) = \alpha^2 var(X)
-\end{align*}
+\end{align}
+\myequations{Properties of Variance}
+
 Adding a constant has no affect to expectation.

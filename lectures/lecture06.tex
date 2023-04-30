@@ -11,10 +11,11 @@ E[X-E[X]] = E[X] - E[X] = 0
 
 If we want to say something about how far we are from the mean, could take $|abs|$.
 
-\begin{align*}
+\begin{align}
 var(X)=E[(X-E[X])^2] = \sum_x(x - E[X])^2 p_X(x)\\
 = E[X^2] -(E[X])^2
-\end{align*}
+\end{align}
+\myequations{Definition of Variance}
 
 std = $\sigma_X = \sqrt{var(X)}$
 
@@ -125,10 +126,11 @@ Divide and Conquer method.
 \caption{Total Probability}
 \end{figure}
 
-\begin{align*}
+\begin{align}
 P(B)=P(A_1)P(B|A_1) + \cdots + P(A_n)P(B|A_n) - \text{Total Probability Theorem} \\
-?? p_X(x) = P(A_1)p_{X|A_1}(x) + \cdots + P(A_n)p_{X|A_n}(x) - \text{Translated with PMF's}\\
-\end{align*}
+?? p_X(x) = P(A_1)p_{X|A_1}(x) + \cdots + P(A_n)p_{X|A_n}(x) - \text{Translated with PMF's}
+\end{align}
+\myequations{Total Probability Theorem}
 
 \begin{align*}
 E[X]=P(A_1)E(X \mid A_1) + \cdots + P(A_n)E(X \mid A_n)
