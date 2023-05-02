@@ -17,9 +17,10 @@ Conditional Expectations: $E[X|Y$
 
 \marginpar{1:38)}
 
-\begin{align*}
+\begin{align}
     E[X|Y=y]= \sum_x x p_{X|Y}(x|y)
-\end{align*}
+\end{align}
+\myequations{Conditional Expectation}
 
 \begin{align*}
     E[X|Y=y]=\frac{y}{2} \qquad (number)
@@ -37,20 +38,22 @@ Conditional Expectations: $E[X|Y$
     E[E[X|Y]]=E[g(Y)]
 \end{align*}
 
-\begin{align*}
+\begin{align}
 E[E[X|Y]]=E[X]
-\end{align*}
+\label{eq:law_iter_ex}
+\end{align}
+\myequations{Law of Iterated Expectation}
 
 \subsection{Law of Total Variance}
 \marginpar{15:10)}
 
-\begin{align*}
+\begin{align}
 var(X) = E[var(X|Y)] + var(E[X|Y])
-\end{align*}
+\label{eq_law_tot_var}
+\end{align}
+\myequations{Law of Total Variance}
 
 Proof confusing and no intuition
-
-
 
 \subsection{Baby Example}
 \marginpar{19:30)}

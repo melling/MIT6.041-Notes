@@ -23,10 +23,13 @@ Take a non-negative discrete RV: $X \ge 0$, $E[X] = \sum_x x p_X(x)$
 
 Since we are adding non-negative,  summing fewer things gives us a smaller values
 
-Restrict x to be greater than some constant; (i.e. removing values}
+Restrict x to be greater than some constant; (i.e. removing values)
 \begin{align*}
     E[X] = \sum_x x p_X(x) \ge \sum_{x\ge a} x p_X(x), 
 \end{align*}
+
+\myequations{Markov Inequality}
+
 
 \marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=6m50s}{(6:50)}} Now a becomes a constant that we can pull outside the summation:
 \begin{align*}
@@ -57,6 +60,8 @@ Now we do a continuous case where we choose a big number to integrate far away f
 Instead of using c, we think of the value as $k\cdot \sigma$.  This is the event that we are k standard deviations away from the mean.
 
 The Chebyshev inequality comes in handy whenever you want to relate probabilities and expected values.  This tells you something about tail probabilities.
+
+\myequations{Chebyshev’s Inequality}
 
 \subsection{Deterministic limits}
 

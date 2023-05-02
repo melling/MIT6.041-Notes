@@ -62,6 +62,81 @@ Reserving the word "outcome" for the outcome of the overall experiment.
 \caption{Sequential Description}
 \end{figure}
 
+%% ================= Sequential Description 
+
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=4.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=2.5cm, sibling distance=1cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+% \tikzstyle{end} = [text, minimum width=3pt,fill, inner sep=0pt]
+\tikzstyle{end} = [text, minimum width=1pt, text right]
+
+\begin{tikzpicture}[scale=0.5,grow=right, sloped]
+\node[bag] {}
+    child {
+        node[bag] {4}% This is the first of three "Bag 2"
+            child {
+                node[end] {4,4}
+            }
+            child {
+                node[end] {4,3}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+    }
+    child {
+        node[bag] {3}
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }    
+    }
+    child {
+        node[bag] {2}
+            child {% Here are three children, hence three end branches
+                node[end] {}
+            }
+            child {
+                node[end] {2,3 outcome}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+    }
+    child {
+        node[bag] {1}
+            child {
+                node[end] {1,4}
+            }
+            child {
+                node[end] {1,3}
+            }
+            child {
+                node[end] {1,2}
+            }
+            child {
+                node[end] {1,1}
+            }          
+    }; 
+\end{tikzpicture}
+
 \subsection{Sample Space: Continuous Example: Darts}
 
 $\Omega = \{(x,y) | \quad 0 \le x, \quad y \le 1 \}$
@@ -115,6 +190,7 @@ When we talk about the \textit{subsets} of sample space, we call them \textbf{ev
     \item Normalization: $P(\Omega)=1$
     \item Additivity: If $A \cap B = \varnothing$, then $P(A \cup B)=P(A) + P(B)$
 \end{enumerate}
+\myequations{Probability Axioms}
 
 \begin{figure}[!ht]
 \centering
