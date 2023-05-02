@@ -1,0 +1,41 @@
+\begin{tikzpicture}[grow=right, sloped]
+\tikzstyle{level 1}=[level distance=2.5cm, sibling distance=1.5cm]
+\tikzstyle{level 2}=[level distance=2.5cm, sibling distance=1.5cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [outer sep=0pt, inner sep=0pt, minimum width=0pt, text width=2em, text centered]
+\tikzstyle{end} = [outer sep=0pt, inner sep=1em, minimum width=0pt, text width=4em, text centered]
+
+\node[bag] {}
+    child {
+        node[bag] {}
+            child {
+                node[end] {}
+                edge from parent                     
+                node[below] {$1-p$}            
+            }
+            child {
+                node[end] {}
+                edge from parent                     
+                node[above] {$p$}                            
+            }
+            edge from parent         
+            node[below]  {$1-p$}
+    }
+    child {
+        node[bag] {}
+            child {
+                node[end] {}
+                edge from parent                     
+                node[below] {$1-p$}                            
+            }
+            child {
+                node[end] {}
+                edge from parent                     
+                node[above] {$p$}                                            
+            }
+            edge from parent                     
+            node[above] {$p$}
+    }; 
+    
+\end{tikzpicture}

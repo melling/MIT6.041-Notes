@@ -1,5 +1,5 @@
 
-\marginpar{\href{https://youtu.be/mHfn_7ym6to}{Video}}
+\marginnote{\href{https://youtu.be/mHfn_7ym6to}{Video}}
 
 Read: 3.1-3.3
 
@@ -22,7 +22,7 @@ f_X \ge 0\\
 
 \subsection{Mean and Variance}
 
-\marginpar{(13:55)}
+\marginnote{(13:55)}
 
 \begin{align}
 E[X] = \int_{-\infty}^{\infty} x f_X(x)dx
@@ -38,7 +38,7 @@ var[X] = \sigma_X^2 = \int_{-\infty}^{\infty} (x - E[X]^2 f_X(x)dx = E[X^2] - (E
 
 \subsection{Continuous Uniform Random Variable}
 
-\marginpar{(13:55)}
+\marginnote{(13:55)}
 
 \begin{center}
     \begin{tikzpicture}[scale = 0.6]
@@ -61,7 +61,7 @@ var[X] = \sigma_X^2 = \int_{-\infty}^{\infty} (x - E[X]^2 f_X(x)dx = E[X^2] - (E
 \end{tikzpicture}
 \end{center}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=6cm, height=4cm]{images/L08/continuous_unif_pdf.jpeg}
 \caption{Continuous Uniform Random Variable}
@@ -88,7 +88,7 @@ E[X] = \int_a^b x\cdot \frac{1}{b-a}dx = \frac{a+b}{2}, \text{midpoint}
 
 \subsection{Cumulative Distribution Function (CDF)}
 
-\marginpar{(20:35)}
+\marginnote{(20:35)}
 
 Unifying concept of continuous and discrete random variables.
 
@@ -143,11 +143,11 @@ F_X(x) = P(X \le x) = \inf_{-\infty}^{\infty} f_X(t)dt
 \end{minipage}
 \end{figure}
 
-\marginpar{(27:40)}
+\marginnote{(27:40)}
 
 Not all RV's are continuous or discrete.  Can be neither or a mixture of both.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L08/mixed_rv.jpeg}
 \caption{Mixed RV/Mixed Distribution}
@@ -155,11 +155,11 @@ Not all RV's are continuous or discrete.  Can be neither or a mixture of both.
 
 \subsection{Gaussian (Normal) PDF}
 
-\marginpar{(27:40)}
+\marginnote{(27:40)}
 
 Sum of many small RVs is Normal.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L08/gaussian_pdf.jpeg}
 \caption{x}
@@ -167,18 +167,20 @@ Sum of many small RVs is Normal.
 
 Standard normal $N(0,1)$
 
-\begin{align*}
+\begin{align}
 f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x/2}
-\end{align*}
+\end{align}
+\myequations{Standard Normal PDF}
 
 $\frac{1}{\sqrt{2\pi}}$ is the constant that makes the integral integrate to 1.
 
 Gaussian centered at different places
-\begin{align*}
+\begin{align}
 &f_X(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)/2\sigma^2}\\
 &\mathbb{E}[X]=\mu \\
 &var(X)= \sigma^2
-\end{align*}
+\end{align}
+\myequations{Gaussian PDF}
 
 Let $Y=aX+b$
 \begin{align*}
@@ -187,7 +189,7 @@ Let $Y=aX+b$
 &Y \sim N(a\mu+b, a^2 \sigma^2)\\
 \end{align*}
 
-\marginpar{(41:30)}
+\marginnote{(41:30)}
 
 \begin{align*}
 \int_{-\infty}^{\bar{x}} e^{-x^2/2}dx

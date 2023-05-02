@@ -1,6 +1,6 @@
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ}{Video}}
-\marginpar{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/unit-iv/lecture-19/}{Lecture Home}}
-\marginpar{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/d569abb143b22f469a09ff218cb3383c_MIT6_041SCF13_L19.pdf}{Slides}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ}{Video}}
+\marginnote{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/unit-iv/lecture-19/}{Lecture Home}}
+\marginnote{\href{https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/d569abb143b22f469a09ff218cb3383c_MIT6_041SCF13_L19.pdf}{Slides}}
 Reading: 5.1-5.3, Start 5.4
 \\
 Introducing limit theorems\\
@@ -12,12 +12,12 @@ This is the estimate of your expected value:
     M_n = \frac{X_1 +\cdots + X_n}{n}, \qquad \text{Sample mean of collected data}
 \end{align*}
 
-\marginpar{(\href{https://youtu.be/3eiio3Tw7UQ?t=2m}{(2:00)}} Expected value $E[X]$ is the mean over the entire population.  It is a number.
+\marginnote{(\href{https://youtu.be/3eiio3Tw7UQ?t=2m}{(2:00)}} Expected value $E[X]$ is the mean over the entire population.  It is a number.
 The sample mean is a random variable because the sample you have collected is random.
 
 \subsection{Markov Inequality}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=5m35s}{(5:35)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?t=5m35s}{(5:35)}}
 
 Take a non-negative discrete RV: $X \ge 0$, $E[X] = \sum_x x p_X(x)$
 
@@ -31,7 +31,7 @@ Restrict x to be greater than some constant; (i.e. removing values)
 \myequations{Markov Inequality}
 
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=6m50s}{(6:50)}} Now a becomes a constant that we can pull outside the summation:
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?t=6m50s}{(6:50)}} Now a becomes a constant that we can pull outside the summation:
 \begin{align*}
     \mathbb{E}[X] = \sum_x x p_X(x) \ge \sum_{x\ge a} x p_X(x) \ge  \sum_{x \ge a} a p_X(x) \ge a \sum_{x\ge a} p_X(x) = a P(X \ge a)
 \end{align*}
@@ -40,22 +40,22 @@ We have arrived at the Markov inequality.  It relates expected values to probabi
 
 We need this statement but in a different form.
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=6m50s}{(6:50)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?t=6m50s}{(6:50)}}
 
 \begin{align*}
 &\mu = E[X]\\
 &    \underbrace{E[(X - \mu)^2]}_{Variance} \ge P((X - \mu)^2 \ge a^2) a^2
 \end{align*}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=9m45s}{(9:45)}} This relates the variance of X to the probability of being far away from the mean is also small.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?t=9m45s}{(9:45)}} This relates the variance of X to the probability of being far away from the mean is also small.
 
 \subsection{Chebyshev’s inequality}
 
-\marginpar{Slide: Chebyshev’s inequality}
+\marginnote{Slide: Chebyshev’s inequality}
 
 Now we do a continuous case where we choose a big number to integrate far away from the mean.
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?t=12m35s}{(12:35)}} The variance is the spread of the distribution. If the variance is small the distribution is not very wide.  This translate mathematically, when the variance is small, the probability of being far away from the mean is small.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?t=12m35s}{(12:35)}} The variance is the spread of the distribution. If the variance is small the distribution is not very wide.  This translate mathematically, when the variance is small, the probability of being far away from the mean is small.
 
 Instead of using c, we think of the value as $k\cdot \sigma$.  This is the event that we are k standard deviations away from the mean.
 
@@ -65,9 +65,9 @@ The Chebyshev inequality comes in handy whenever you want to relate probabilitie
 
 \subsection{Deterministic limits}
 
-\marginpar{Slide: Deterministic limits}
+\marginnote{Slide: Deterministic limits}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?14m30s}{(14:30)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?14m30s}{(14:30)}}
 
 \begin{figure}[ht]
 \centering
@@ -75,16 +75,16 @@ The Chebyshev inequality comes in handy whenever you want to relate probabilitie
 \caption{Convergence of a Sequence}
 \end{figure}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?16m20s}{(16:20)}}Convergence means given a band of positive length around the number a, the values of the sequence that you get, eventually stay inside the band.  This holds no matter how narrow the band is made to be.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?16m20s}{(16:20)}}Convergence means given a band of positive length around the number a, the values of the sequence that you get, eventually stay inside the band.  This holds no matter how narrow the band is made to be.
 
 \subsection{Convergence "in probability"}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?17m50s}{(17:50)}}
-\marginpar{Slide: Convergence "in probability"}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?17m50s}{(17:50)}}
+\marginnote{Slide: Convergence "in probability"}
 
 What does it mean for a sequence of random variables to converge to a number?
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?18m30s}{(18:30)}} Now we want the distribution inside the band.  The tails won't be, but we want more and more.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?18m30s}{(18:30)}} Now we want the distribution inside the band.  The tails won't be, but we want more and more.
 
 \begin{figure}[ht]
 \centering
@@ -96,7 +96,7 @@ The mathematical statement is messy...better to think of the bands analogy.
 
 \subsubsection*{Example}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?22m00s}{(22:00)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?22m00s}{(22:00)}}
 
 \begin{figure}[ht]
 \centering
@@ -115,11 +115,11 @@ What is the $\mathbb{E}[Y_n]$
     \mathbb{E}[Y_n^2] = \infty
 \end{align*}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?24m00s}{(24:00)}} Convergences of a RV to zero doesn't imply anything about  convergence expected value, variance, etc.  It doesn't tell us how far the tail goes.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?24m00s}{(24:00)}} Convergences of a RV to zero doesn't imply anything about  convergence expected value, variance, etc.  It doesn't tell us how far the tail goes.
 
 \subsection{Convergence of the Sample Mean}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?25m00s}{(25:00 - Slide)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?25m00s}{(25:00 - Slide)}}
 
 \begin{align*}
     M_n = \frac{X_1 + \cdots + X_n}{n} = \text{Sample Mean}
@@ -129,7 +129,7 @@ What is the $\mathbb{E}[Y_n]$
     \mathbb{E}[M_n] = \frac{E[X_1] + \cdots + E[X_n]}{n} = \frac{n \mu}{n} = \mu
 \end{align*}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?27m00s}{(27:00)}} The sample mean is the heights we collected over a single expedition; this is $M_n$.  The expected value means thinking over a huge number of expeditions.  We average the averages at each expedition: $E[M_n]$.  Remember expectations always give numbers, where as the sample mean is a random variable.
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?27m00s}{(27:00)}} The sample mean is the heights we collected over a single expedition; this is $M_n$.  The expected value means thinking over a huge number of expeditions.  We average the averages at each expedition: $E[M_n]$.  Remember expectations always give numbers, where as the sample mean is a random variable.
 
 \begin{align*}
     Var(M_n) = \frac{n \cdots \sigma^2}{n^2} = \frac{\sigma^2}{n}
@@ -150,11 +150,11 @@ We have convergence \emph{in probability} to the sample mean to the true mean.
 
 \subsection{Example: The Pollster’s Problem}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?30m45s}{(30:45)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?30m45s}{(30:45)}}
 
 Slide: The pollster’s problem\\
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?36m30s}{(36:30)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?36m30s}{(36:30)}}
 \begin{figure}[ht]
 \centering
 \includegraphics[width=7cm, height=4cm]{images/L19/IMG_3318.png}
@@ -165,13 +165,13 @@ We are going to use the worst value for $\sigma_X^2$, which is 4.
 
 Solving for n, we find that it needs to be greater than or equal to 50,000.
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?38m40s}{(38:40)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?38m40s}{(38:40)}}
 
 50,000 is too many people to sample so we try to cut corners.  Newspapers will go with $\pm$3 percentage points instead of 1 point.  This saves you a factor of 10.  Chebyshev is not a very tight inequality.  It's not that accurate.
 
 \subsection{Different scalings of \texorpdfstring{$M_n$}{M}}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?40m00s}{40:00)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?40m00s}{40:00)}}
 
 Slide: Different scalings of $M_n$
 
@@ -197,7 +197,7 @@ So, when we scale in this particular way $S_n$ changes but the variance doesn't 
 
 \subsection{Central Limit Theorem}
 
-\marginpar{\href{https://youtu.be/3eiio3Tw7UQ?38m40s}{(44:10)}}
+\marginnote{\href{https://youtu.be/3eiio3Tw7UQ?38m40s}{(44:10)}}
 
 Slide: Central Limit Theorem\\
 

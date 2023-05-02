@@ -1,32 +1,7 @@
 \documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{bbm}
-\usepackage{hyperref}
-\usepackage{titling}
-\usepackage{fancyhdr} % to change header and footers
-\graphicspath{ {./images/} }
-\usepackage{marginnote}
-\usepackage{tikz, pgfplots}
-% \usetikzlibrary{positioning}
-\pgfplotsset{compat=1.18}
-\usetikzlibrary{automata,arrows,positioning,calc}
-\usetikzlibrary{trees}
 
-\usepackage{subfiles} % Best loaded last in the preamble
-\usepackage{tocloft}
-
-%\usepackage[left=1.0in,top=1.0in,right=1.0in,bottom=1.0in]{geometry} % Document margins
-
-% \setlength{\droptitle}{-12em}   % This is your set screw
-% Turn on the style
-\pagestyle{fancy}
-% Clear the header and footer
-\fancyhead{}
-\fancyfoot{}
-% Set the right side of the footer to be the page number
-\fancyfoot[R]{\thepage}
+\input{preamble}
+\input{macros}
 
 \title{MIT 6.041}
 \author{Michael Mellinger \\ \href{mailto:mmellinger66@gmail.com}{mmellinger66@gmail.com} }
@@ -39,25 +14,6 @@
 % \hspace{1in}
 % Text here. \hfill Push me to the right
 
-% Naturals, reals, etc.
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}} 
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\I}{\mathbb{I}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
-
-\newcommand{\e}[1]{{\mathbb E}\left[ #1 \right]}
-% https://stats.meta.stackexchange.com/questions/1419/latex-macros-for-expectation-variance-and-covariance
-% \DeclareMathOperator{\E}{\mathbb{E}} \E(X,Y) 
-
-% https://tex.stackexchange.com/questions/173102/table-of-equations-like-list-of-figures
-%%gmedina solution
-\newcommand{\listequationsname}{List of Equations}
-\newlistof{myequations}{equ}{\listequationsname}
-\newcommand{\myequations}[1]{%
-\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
-\setlength{\cftmyequationsnumwidth}{2.5em}% Width of equation number in List of Equations
 
 \begin{document}
 

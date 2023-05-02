@@ -1,0 +1,20 @@
+% Naturals, reals, etc.
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\e}[1]{{\mathbb E}\left[ #1 \right]}
+% https://stats.meta.stackexchange.com/questions/1419/latex-macros-for-expectation-variance-and-covariance
+% \DeclareMathOperator{\E}{\mathbb{E}} \E(X,Y) 
+
+% https://tex.stackexchange.com/questions/173102/table-of-equations-like-list-of-figures
+%%gmedina solution
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{myequations}{equ}{\listequationsname}
+
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+\setlength{\cftmyequationsnumwidth}{2.5em}% Width of equation number in List of Equations

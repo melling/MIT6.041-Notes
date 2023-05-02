@@ -1,9 +1,9 @@
 
-\marginpar{\href{https://youtu.be/-qCEoqpwjf4}{Video}} Reading: 2.4-2.6
+\marginnote{\href{https://youtu.be/-qCEoqpwjf4}{Video}} Reading: 2.4-2.6
 
 RV is a function from the sample space to the real numbers: $\Omega \rightarrow \mathbb{R}$
 
-\marginpar{(8m)}
+\marginnote{(8m)}
 
 \begin{align*}
 E[X-E[X]] = E[X] - E[X] = 0
@@ -21,18 +21,19 @@ std = $\sigma_X = \sqrt{var(X)}$
 
 \subsection{Random Speed}
 
-\marginpar{(12m)}
+\marginnote{(12m)}
 
 Traverse 200 mile distance at constant but random speed v.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \begin{tikzpicture}
 \centering
 \begin{axis}[
     % axis lines = left,
+    ymin=0, ymax=1,
    xtick={1,200},
-    ytick={.5,.5},
+    ytick={0,.5},
 ]
 \addplot+[ycomb] plot coordinates
     {(1,.5) (200,.5) };
@@ -53,7 +54,7 @@ var[V] = \frac{1}{2}(1-100.5)^2 + \frac{1}{2}(200 -100.5)^2 = 100^2
 
 $\sigma_V = \sqrt{100^2}=100$
 
-\marginpar{(14:15)}
+\marginnote{(14:15)}
 
 Random variable T: time in hours=T=$T(v)=$
 
@@ -71,7 +72,7 @@ E[200/V] = E[T] \ne 200/E[V] \approx 2
 
 \subsection{Conditional PMF and Expectation}
 
-\marginpar{(18m)}
+\marginnote{(18m)}
 
 \begin{align*}
 p_{X|A}(x) = P(X=x|A)\\
@@ -91,13 +92,14 @@ E[X|A] = \frac{1}{3}2 + \frac{1}{3}3 + \frac{1}{3}4=3
 \end{align*}
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
     % axis lines = left,
    xtick={1,2,3,4},
     ytick={0,.25,1},
+    ymin=0, ymax=1
 ]
 \addplot+[ycomb] plot coordinates
     % {(0,.25) (1,.25) (2,.25) (3,.25) (4,.25)};
@@ -107,20 +109,20 @@ E[X|A] = \frac{1}{3}2 + \frac{1}{3}3 + \frac{1}{3}4=3
 \caption{$p_X(x)$}
 \end{figure}
 
-\marginpar{(23:25)}
+\marginnote{(23:25)}
 
 \subsection{Geometric PMF}
-\marginpar{(24:50)}
+\marginnote{(24:50)}
 
 \subsection{Total Expectation Theorem}
 
-\marginpar{(34:30)}
+\marginnote{(34:30)}
 
 Partition sample space into disjoint events $A_1, \ldots, A_n$
 
 Divide and Conquer method.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L02/total_prob.jpeg}
 \caption{Total Probability}
@@ -138,7 +140,7 @@ E[X]=P(A_1)E(X \mid A_1) + \cdots + P(A_n)E(X \mid A_n)
 
 \subsection{Divide and Conquer with Geometric Variable}
 
-\marginpar{(37:25)}
+\marginnote{(37:25)}
 
 $A_1:\{X=1\}, A_2:\{X >1\}$
 
@@ -153,9 +155,9 @@ E[X|X-1 >0] = E[X-1 \mid X-1>0] + 1 ??
 
 \subsection{Joint PMFs}
 
-\marginpar{(48:30)} Joint probabilities
+\marginnote{(48:30)} Joint probabilities
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=8cm, height=4cm]{images/L06/joint_pmf.jpeg}
 \caption{Joint PMFs}

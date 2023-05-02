@@ -60,7 +60,7 @@ n(n-1)(n-2)\cdots (n-k+1)=\frac{n!}{(n-k)!} \quad choices
 
 Hence:
 \begin{align*}
-{n \choose k}\cdot k! = \frac{n!}{(n-k)!} \Rightarrow {n \choose k} \frac{n!}{k!(n-k)!}
+\binom{n}{k}\cdot k! = \frac{n!}{(n-k)!} \Rightarrow \binom{n}{k}\frac{n!}{k!(n-k)!}
 \end{align*}
 This is the binomial coefficient.
 
@@ -76,7 +76,7 @@ Defn: $0! = 1$
 
 \marginpar{(26m)}
 
-$$\sum_{k=0}^n {n \choose k} = 2^n$$ \text{ we count the total number subsets}
+$$\sum_{k=0}^n \binom{n}{k} = 2^n$$ \text{ we count the total number subsets}
 
 \subsubsection{Binomial Probabilities}
 
@@ -91,7 +91,7 @@ $$\sum_{k=0}^n {n \choose k} = 2^n$$ \text{ we count the total number subsets}
 
 \marginpar{(32:25)}
 
-\# k-head sequence = \# k-element subsets of ${n \choose k}$
+\# k-head sequence = \# k-element subsets of $\binom{n}{k}$
 
 \begin{figure}[h]
 \centering
@@ -100,7 +100,7 @@ $$\sum_{k=0}^n {n \choose k} = 2^n$$ \text{ we count the total number subsets}
 \end{figure}
 
 \begin{align}
-\sum_{k=0}^{n} {n \choose k} p^k(1-p)^{n-k}=1  
+\sum_{k=0}^{n} \binom{n}{k} p^k(1-p)^{n-k}=1  
 \label{eq:binomial_pmf}
 \end{align}
 
@@ -120,7 +120,7 @@ Event B = \{3 out of 10 heads\}, Event A=\{first two tosses H\}
 
 Events of $\Omega$ are not equally likely.
 
-B: ${10 \choose 3}$, A: only third is uncertain: 8
+B: $\binom{10}{3}$, A: only third is uncertain: 8
 
 \subsection{Partitions}
 
@@ -133,7 +133,8 @@ B: ${10 \choose 3}$, A: only third is uncertain: 8
 \end{figure}
 
 \begin{align*}
-    {52 \choose 13}{39 \choose 13}{26 \choose 13}{13 \choose 13}
+\binom{52}{13}\binom{39}{13}\binom{26}{13}\binom{13}{13}\\
+    % {52 \choose 13}{39 \choose 13}{26 \choose 13}{13 \choose 13}
 \end{align*}
 
 \begin{align*}

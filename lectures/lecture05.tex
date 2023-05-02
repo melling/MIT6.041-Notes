@@ -1,7 +1,7 @@
 
 \marginpar{\href{https://youtu.be/3MOahpLxj6A}{Video}} Reading: 2.1-2.3 start 2.4
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/diff_rvs.jpeg}
 \caption{Experiment with Several RVs}
@@ -17,7 +17,7 @@
 
 \marginpar{(11m)}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/pmf_px.jpeg}
 \caption{Different RVs}
@@ -38,7 +38,7 @@ $$(1-p)^{k-1}p$$
 \edef\mylst{"p","p(1-p)"}
 
 \marginpar{(17m)}
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 % \includegraphics[width=5cm, height=4cm]{images/L05/geometric.jpeg}
 \begin{tikzpicture}[scale = 0.7]
@@ -61,7 +61,7 @@ $$(1-p)^{k-1}p$$
 
 \marginpar{(18:50)}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/min_2die_roll.jpeg}
 \caption{Sample Space}
@@ -90,13 +90,13 @@ There are 6 events:
 \begin{align*}
 p_X(2)=P(HHTT) + P(HTHT) + \cdots + P(TTHH)\\
 =6p^2(1-p)^2 \\
-={4 \choose 2} p^2(1-p)^2 \\
+=\binom{4}{2} p^2(1-p)^2 \\
 \end{align*}
 
 In general:
 
 \begin{align}
-p_X(k)={n \choose k} p^k(1-p)n-k, \qquad k=0,\ldots,n
+p_X(k)=\binom{n}{k} p^k(1-p)n-k, \qquad k=0,\ldots,n
 \end{align}
 \myequations{Binomial PMF}
 
@@ -106,7 +106,7 @@ p_X(k)={n \choose k} p^k(1-p)n-k, \qquad k=0,\ldots,n
 
 
 \marginpar{(23:25)}
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/bern_norm_approx.jpeg}
 \caption{Large n gives bell curve}
@@ -116,7 +116,7 @@ p_X(k)={n \choose k} p^k(1-p)n-k, \qquad k=0,\ldots,n
 
 \marginpar{(25:15)}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/EX_rv.jpeg}
 \caption{PMF Payout}
@@ -136,7 +136,7 @@ Note, this is also the center of gravity.
 
 \marginpar{(30:45)}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=5cm, height=4cm]{images/L05/EX_properties.jpeg}
 \caption{Properties}

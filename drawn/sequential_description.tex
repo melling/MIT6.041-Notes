@@ -1,0 +1,75 @@
+%% ================= Sequential Description 
+
+\begin{tikzpicture}[scale=0.7,grow=right, sloped]
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=4.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=2.5cm, sibling distance=1cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [outer sep=0pt, inner sep=0pt, minimum width=0pt, text width=4em, text centered]
+% \tikzstyle{end} = [text, minimum width=3pt,fill, inner sep=0pt]
+\tikzstyle{end} = [outer sep=0pt, inner sep=0pt, minimum width=0pt,text width=4em, text centered]
+
+\node[bag] {}
+    child {
+        node[bag] {4}% This is the first of three "Bag 2"
+            child {
+                node[end] {4,4}
+            }
+            child {
+                node[end] {4,3}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+    }
+    child {
+        node[bag] {3}
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }    
+    }
+    child {
+        node[bag] {2}
+            child {% Here are three children, hence three end branches
+                node[end] {}
+            }
+            child {
+                % node[end] {2,3 outcome}
+                node[end, label=right:{2,3 outcome}] {}
+            }
+            child {
+                node[end] {}
+            }
+            child {
+                node[end] {}
+            }
+    }
+    child {
+        node[bag] {1}
+            child {
+                node[end] {1,4}
+            }
+            child {
+                node[end] {1,3}
+            }
+            child {
+                node[end] {1,2}
+            }
+            child {
+                node[end] {1,1}
+            }          
+    }; 
+\end{tikzpicture}

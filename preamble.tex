@@ -1,0 +1,30 @@
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{fancyhdr} % to change header and footers
+\graphicspath{ {./images/} }
+\usepackage{marginnote} % Non-floating \marginnote vs \marginpar
+\usepackage{tikz, pgfplots}
+% \usetikzlibrary{positioning}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{automata,arrows,positioning,calc}
+\usetikzlibrary{trees}
+
+
+\usepackage{subfiles} % Best loaded last in the preamble
+\usepackage{tocloft}
+
+%\usepackage[left=1.0in,top=1.0in,right=1.0in,bottom=1.0in]{geometry} % Document margins
+
+% \setlength{\droptitle}{-12em}   % This is your set screw
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
